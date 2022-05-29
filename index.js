@@ -53,7 +53,7 @@ function lakukanLooping(arrPegawai) {
         jumlahWanita += 1;
     }
   }
-  for
+  
   /*
     TODO 4: Buatlah sebuah variabel bernama "komentar"
       yang akan mengomentari apakah lebih banyak Pria atau Wanita
