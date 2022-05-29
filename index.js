@@ -24,11 +24,8 @@ function lakukanLooping(arrPegawai) {
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
   let hasilLooping = [];
-      for (let i =0; i< dataYangAkanDilooping.lenght; i++) {
-        let namaLengkap = dataYangAkanDilooping[i].namaDepan + " " + datayangAkanDilooping[i].namaBelakang;
-
-        hasilLooping[i] = namaLengkap;
-        hasilLooping[i];
+      for (pegawai of arrPegawai) {
+            hasilLooping.push(`${pegawai.namaDepan} ${pegawai.namaBelakang}`)
       }
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
@@ -36,10 +33,10 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahPria = 0;
 
-  for (let i =0; i < dataYangAkanDilooping.lenght; i++) {
-      if (dataYangAkanDilooping[i].jenisKelamin == 'M') {
-          jumlahPria += 1;
-      }
+  for (pegawai of arrPegawai) {
+    if (pegawai.jenisKelamin === "M") {
+      jumlahPria++;
+    }
   }
 
   /*
@@ -48,10 +45,10 @@ function lakukanLooping(arrPegawai) {
   */
   let jumlahWanita = 0;
 
-  for (let i =0; i < dataYangAkanDilooping.lenght; i++) {
-    if (dataYangAkanDilooping[i].jenisKelamin == 'F') {
-        jumlahWanita += 1;
-    }
+    for (pegawai of arrPegawai) {
+          if (pegawai.jenisKelamin === "F") {
+                jumlahWanita++;
+          }
   }
   
   /*
